@@ -27,8 +27,6 @@ def calculate():
 result=Label(window,font=("Arial",30),width=25,height=2,text="")
 result.pack()
 
-
-
 Button(window,text="c",width=5,height=1,font=("arial",30,"bold"),bd=1,fg="indigo",bg="#060270", command=lambda: clear()).place(x=10,y=100)
 Button(window,text="/",width=5,height=1,font=("arial",30,"bold"),bd=1,fg="white",bg="#2A2B36", command=lambda: show("/")).place(x=150,y=100)
 Button(window,text="%",width=5,height=1,font=("arial",30,"bold"),bd=1,fg="white",bg="#2A2B36", command=lambda: show("%")).place(x=290,y=100)
@@ -51,10 +49,5 @@ Button(window,text="0",width=11,height=1,font=("arial",30,"bold"),bd=1,fg="white
 
 Button(window,text=".",width=5,height=1,font=("arial",30,"bold"),bd=1,fg="white",bg="#2A2B36", command=lambda: show(".")).place(x=290,y=500)
 Button(window,text="=",width=5,height=3,font=("arial",30,"bold"),bd=1,fg="white",bg="#2A2B36", command=lambda: calculate()).place(x=430,y=400)
-
-
-
-
-
 
 window.mainloop()
